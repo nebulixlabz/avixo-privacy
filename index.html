@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avixo — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6C63FF;
+      --primary-dark: #4B44CC;
+      --primary-soft: #EEEDFF;
+      --accent: #00C896;
+      --accent-soft: #E0F8F1;
+      --warn: #F59E0B;
+      --warn-soft: #FEF3C7;
+      --danger: #FF5252;
+      --danger-soft: #FFE5E5;
+      --bg: #F7F8FC;
+      --card: #FFFFFF;
+      --text: #1A1A2E;
+      --text-secondary: #6B7280;
+      --text-light: #9CA3AF;
+      --border: #E5E7EB;
+      --border-light: #F1F3F8;
+      --shadow-sm: 0 1px 3px rgba(26, 26, 46, 0.04), 0 1px 2px rgba(26, 26, 46, 0.02);
+      --shadow-md: 0 4px 16px rgba(26, 26, 46, 0.06);
+      --shadow-lg: 0 12px 40px rgba(76, 68, 204, 0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15.5px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: linear-gradient(135deg, #4B44CC 0%, #6C63FF 55%, #8B83FF 100%);
+      color: white;
+      padding: 70px 20px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -15%;
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle, rgba(0, 200, 150, 0.18) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -25%;
+      left: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .logo-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .logo-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      letter-spacing: -1px;
+    }
+
+    .logo-text {
+      font-size: 1.5em;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.8em;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .header h1 {
+      font-size: 2.6em;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+
+    .header .tagline {
+      font-size: 1.1em;
+      font-weight: 400;
+      opacity: 0.92;
+      margin-bottom: 6px;
+    }
+
+    .header .subtitle {
+      font-size: 0.95em;
+      opacity: 0.78;
+      margin-top: 8px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .header .dates {
+      margin-top: 26px;
+      font-size: 0.82em;
+      opacity: 0.65;
+      font-weight: 400;
+    }
+
+    /* ===== QUICK SUMMARY ===== */
+    .summary-section {
+      background: var(--bg);
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .summary-wrapper {
+      max-width: 940px;
+      margin: 0 auto;
+      transform: translateY(-40px);
+    }
+
+    .summary-card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 36px 32px 32px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-light);
+    }
+
+    .summary-header {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .summary-header h2 {
+      font-size: 1.35em;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .summary-header p {
+      color: var(--text-light);
+      font-size: 0.9em;
+      font-weight: 400;
+    }
+
+    .summary-tagline {
+      text-align: center;
+      margin-bottom: 28px;
+      padding: 18px 24px;
+      background: linear-gradient(135deg, var(--primary-soft) 0%, #DCE9FF 100%);
+      border-radius: 14px;
+      border: 1px solid rgba(108, 99, 255, 0.15);
+    }
+
+    .summary-tagline p {
+      font-size: 1.05em;
+      font-weight: 600;
+      color: var(--primary-dark);
+      letter-spacing: -0.2px;
+    }
+
+    .summary-tagline span {
+      display: block;
+      font-size: 0.82em;
+      font-weight: 400;
+      color: var(--text-secondary);
+      margin-top: 6px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .summary-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px 14px 18px;
+      background: var(--bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      transition: all 0.25s ease;
+    }
+
+    .summary-item:hover {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(108, 99, 255, 0.1);
+    }
+
+    .summary-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4em;
+      margin-bottom: 12px;
+      flex-shrink: 0;
+    }
+
+    .si-purple { background: var(--primary-soft); }
+    .si-mint { background: var(--accent-soft); }
+    .si-blue { background: #DBEAFE; }
+    .si-amber { background: var(--warn-soft); }
+    .si-rose { background: #FFE4E6; }
+    .si-slate { background: #E2E8F0; }
+
+    .summary-title {
+      font-size: 0.85em;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .summary-desc {
+      font-size: 0.76em;
+      color: var(--text-secondary);
+      line-height: 1.45;
+      font-weight: 400;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .container {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .content {
+      padding: 8px 0 60px;
+    }
+
+    /* ===== TOC ===== */
+    .toc {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 26px 32px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+
+    .toc h3 {
+      font-size: 1.02em;
+      color: var(--text);
+      margin-bottom: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toc h3::before {
+      content: '';
+      width: 4px;
+      height: 18px;
+      background: var(--primary);
+      border-radius: 4px;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 22px;
+      columns: 2;
+      column-gap: 36px;
+      color: var(--text-secondary);
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+      break-inside: avoid;
+    }
+
+    .toc a {
+      font-weight: 400;
+      font-size: 0.9em;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .toc a:hover {
+      color: var(--primary);
+    }
+
+    /* ===== SECTION CARDS ===== */
+    .section {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 34px 32px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .section-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      border-radius: 10px;
+      font-size: 0.82em;
+      font-weight: 700;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .section h2 {
+      font-size: 1.32em;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--border-light);
+      letter-spacing: -0.3px;
+    }
+
+    .section h3 {
+      font-size: 1em;
+      color: var(--text);
+      margin: 22px 0 10px;
+      font-weight: 600;
+    }
+
+    .section p {
+      margin-bottom: 14px;
+      color: var(--text-secondary);
+    }
+
+    .section p strong, .section li strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* ===== LISTS ===== */
+    .section ul, .section ol {
+      margin: 10px 0 16px 22px;
+      color: var(--text-secondary);
+    }
+
+    .section li {
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    /* ===== HIGHLIGHT BOXES ===== */
+    .highlight {
+      padding: 18px 22px;
+      border-radius: 14px;
+      margin: 16px 0;
+      font-size: 0.93em;
+      line-height: 1.65;
+    }
+
+    .highlight-purple {
+      background: var(--primary-soft);
+      border-left: 4px solid var(--primary);
+      color: #2D2A6B;
+    }
+
+    .highlight-mint {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      color: #00674E;
+    }
+
+    .highlight-amber {
+      background: var(--warn-soft);
+      border-left: 4px solid var(--warn);
+      color: #78350F;
+    }
+
+    .highlight-red {
+      background: var(--danger-soft);
+      border-left: 4px solid var(--danger);
+      color: #7F1D1D;
+    }
+
+    .highlight strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.96em;
+    }
+
+    /* ===== CHECK/CROSS LISTS ===== */
+    .check-list {
+      list-style: none !important;
+      margin-left: 0 !important;
+      padding: 0;
+    }
+
+    .check-list li {
+      padding: 9px 0 9px 34px;
+      position: relative;
+      font-size: 0.94em;
+      margin-bottom: 0;
+    }
+
+    .check-list li::before {
+      position: absolute;
+      left: 0;
+      font-size: 1.1em;
+    }
+
+    .check-list li.yes::before { content: '\2705'; }
+    .check-list li.no::before { content: '\274C'; }
+    .check-list li.warn::before { content: '\26A0\FE0F'; }
+    .check-list li.lock::before { content: '\1F512'; }
+    .check-list li.shield::before { content: '\1F6E1\FE0F'; }
+    .check-list li.info::before { content: '\2139\FE0F'; }
+    .check-list li.money::before { content: '\1F4B0'; }
+
+    /* ===== DATA FLOW ===== */
+    .data-flow {
+      background: var(--bg);
+      border-radius: 16px;
+      padding: 26px 22px;
+      margin: 20px 0;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+
+    .flow-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin: 12px 0;
+    }
+
+    .flow-box {
+      padding: 14px 22px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 0.86em;
+      min-width: 140px;
+      line-height: 1.3;
+    }
+
+    .flow-box small {
+      display: block;
+      font-weight: 400;
+      font-size: 0.85em;
+      opacity: 0.85;
+      margin-top: 2px;
+    }
+
+    .flow-device {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+    }
+
+    .flow-firebase {
+      background: linear-gradient(135deg, #FFA726 0%, #FB8C00 100%);
+      color: white;
+    }
+
+    .flow-upi {
+      background: linear-gradient(135deg, var(--accent) 0%, #00A37C 100%);
+      color: white;
+    }
+
+    .flow-arrow {
+      font-size: 1.3em;
+      color: var(--text-light);
+    }
+
+    .flow-label {
+      font-size: 0.76em;
+      color: var(--text-light);
+      margin-top: 3px;
+      font-weight: 500;
+    }
+
+    /* ===== TABLES ===== */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.9em;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 0 1px var(--border-light);
+    }
+
+    .data-table th {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: white;
+      padding: 13px 18px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.92em;
+    }
+
+    .data-table td {
+      padding: 13px 18px;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+
+    .data-table tr:nth-child(even) {
+      background: var(--bg);
+    }
+
+    .data-table tr:hover td {
+      background: var(--primary-soft);
+    }
+
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* ===== THIRD-PARTY CARD ===== */
+    .third-party-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 16px 0;
+    }
+
+    .third-party-card h4 {
+      font-size: 1em;
+      margin-bottom: 10px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* ===== LINKS ===== */
+    .section a, .footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .section a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: linear-gradient(160deg, #2D2A6B 0%, #1F1C50 100%);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 44px 20px;
+      text-align: center;
+      font-size: 0.88em;
+    }
+
+    .footer strong {
+      color: white;
+    }
+
+    .footer a {
+      color: #A5B4FC;
+    }
+
+    .footer a:hover {
+      color: white;
+    }
+
+    .footer .developer {
+      margin-bottom: 14px;
+      font-size: 1.05em;
+    }
+
+    .footer .links {
+      margin-top: 12px;
+    }
+
+    .footer .legal {
+      margin-top: 22px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.82em;
+      opacity: 0.65;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .toc ol {
+        columns: 1;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .header {
+        padding: 56px 18px 50px;
+      }
+      .header h1 {
+        font-size: 2em;
+      }
+      .header .tagline {
+        font-size: 1em;
+      }
+      .summary-card {
+        padding: 26px 20px 22px;
+      }
+      .summary-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .summary-item {
+        padding: 16px 10px 14px;
+      }
+      .summary-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+      }
+      .section {
+        padding: 24px 20px;
+        border-radius: 14px;
+      }
+      .section h2 {
+        font-size: 1.12em;
+      }
+      .flow-row {
+        flex-direction: column;
+        gap: 8px;
+      }
+      .flow-arrow {
+        transform: rotate(90deg);
+      }
+      .data-table {
+        font-size: 0.8em;
+      }
+      .data-table th,
+      .data-table td {
+        padding: 9px 11px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-content">
+      <div class="logo-row">
+        <div class="logo-mark">A</div>
+        <span class="logo-text">Avixo</span>
+      </div>
+      <div class="header-badge">&#x1F1EE;&#x1F1F3; Built for India &middot; UPI-Native</div>
+      <h1>Privacy Policy</h1>
+      <p class="tagline">Splitwise meets a real expense tracker.</p>
+      <p class="subtitle">Avixo coordinates shared expenses and gives you analytics on your spending. We never hold your money &mdash; settlements happen through your existing UPI app.</p>
+      <p class="dates">
+        Effective: May 15, 2026 &nbsp;&bull;&nbsp;
+        Last Updated: May 15, 2026 &nbsp;&bull;&nbsp;
+        v1.0
+      </p>
+    </div>
+  </div>
+
+  <!-- Quick Summary -->
+  <div class="summary-section">
+    <div class="summary-wrapper">
+      <div class="summary-card">
+        <div class="summary-header">
+          <h2>Here's the short version</h2>
+          <p>What we collect, what we don't, and why</p>
+        </div>
+
+        <div class="summary-tagline">
+          <p>Avixo never holds, transfers, or has custody of your money.</p>
+          <span>Settlements run through your UPI app (GPay, PhonePe, Paytm, etc.). We are not a payment service, wallet, or financial institution.</span>
+        </div>
+
+        <div class="summary-grid">
+          <div class="summary-item">
+            <div class="summary-icon si-purple">&#x1F510;</div>
+            <div class="summary-title">Google Sign-In</div>
+            <div class="summary-desc">We use your Google account to sign you in &mdash; no passwords to manage</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-icon si-mint">&#x1F4B0;</div>
+            <div class="summary-title">UPI Intent Only</div>
+            <div class="summary-desc">Money moves directly between your UPI apps &mdash; never through Avixo</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-icon si-blue">&#x2601;&#xFE0F;</div>
+            <div class="summary-title">Firebase Backend</div>
+            <div class="summary-desc">Your groups, expenses, and friends sync via Google Firebase</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-icon si-amber">&#x1F4F1;</div>
+            <div class="summary-title">Phone Lookup</div>
+            <div class="summary-desc">Your phone number lets friends find you &mdash; stored as a profile field, never verified or shared with third parties</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-icon si-rose">&#x1F6AB;</div>
+            <div class="summary-title">No Ads, No Sale</div>
+            <div class="summary-desc">No ad networks, no data sale, no behavioural ad targeting</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-icon si-slate">&#x1F5D1;&#xFE0F;</div>
+            <div class="summary-title">You Can Delete</div>
+            <div class="summary-desc">Delete your account from inside the app &mdash; we'll remove your data</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container content">
+
+    <!-- TOC -->
+    <div class="toc">
+      <h3>Table of Contents</h3>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#info-collected">Information We Collect</a></li>
+        <li><a href="#info-not-collected">What We Do NOT Collect</a></li>
+        <li><a href="#how-used">How Your Information Is Used</a></li>
+        <li><a href="#data-flow">Data Flow &amp; Architecture</a></li>
+        <li><a href="#upi-settlement">UPI Settlement &amp; Money Custody</a></li>
+        <li><a href="#storage-security">Data Storage &amp; Security</a></li>
+        <li><a href="#third-party">Third-Party Services</a></li>
+        <li><a href="#permissions">App Permissions</a></li>
+        <li><a href="#data-sharing">Data Sharing &amp; Disclosure</a></li>
+        <li><a href="#your-rights">Your Privacy Rights</a></li>
+        <li><a href="#retention-deletion">Retention &amp; Account Deletion</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#international">International Users</a></li>
+        <li><a href="#your-responsibilities">Your Responsibilities</a></li>
+        <li><a href="#changes">Changes to This Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </div>
+
+    <!-- 1. Introduction -->
+    <div class="section" id="introduction">
+      <h2><span class="section-number">1</span> Introduction</h2>
+      <p>
+        Avixo ("we," "our," "us," or "the app") is a shared-expense and personal-finance tracking application developed by <strong>Nebulixlabz</strong>. Avixo lets friends split expenses, simplify debts, and settle up via UPI &mdash; while also providing a personal expense tracker with category analytics.
+      </p>
+      <p>
+        This Privacy Policy explains what information we collect when you use Avixo, how it is stored and used, who we share it with, and the rights you have over your data. We aim for full transparency about our data practices.
+      </p>
+      <div class="highlight highlight-purple">
+        <strong>Our Core Principles</strong>
+        Avixo is a coordination layer for expenses, not a payment service. We never take custody of your money. We collect only the data we need to make the app work. We do not sell your data, do not show ads, and do not run behavioural advertising profiles on you.
+      </div>
+    </div>
+
+    <!-- 2. Information We Collect -->
+    <div class="section" id="info-collected">
+      <h2><span class="section-number">2</span> Information We Collect</h2>
+      <p>
+        To make Avixo work, we collect and store the following categories of information in <strong>Google Firebase</strong> (Firestore database and Cloud Storage):
+      </p>
+
+      <h3>Account &amp; Profile Information</h3>
+      <ul>
+        <li><strong>Google account details</strong> &mdash; email, display name, and profile photo URL from your Google account when you sign in via Google Sign-In</li>
+        <li><strong>Phone number</strong> &mdash; entered during onboarding so friends can find you. <strong>Unverified.</strong> Stored as a profile field, not used for authentication, and not shared with third parties.</li>
+        <li><strong>UPI VPA</strong> &mdash; your UPI address (e.g. <code>yourname@bank</code>), used only to construct UPI Intent links so others can pay you. We do not validate or use it to move money.</li>
+        <li><strong>Avixo user ID</strong> &mdash; a unique identifier generated for your account</li>
+      </ul>
+
+      <h3>Group &amp; Expense Data</h3>
+      <ul>
+        <li><strong>Groups you create or join</strong> &mdash; group name, emoji, member list, settings, and creation date</li>
+        <li><strong>Expenses</strong> &mdash; amount, currency, category, who paid, split shares, notes, and timestamps for every expense logged in a group</li>
+        <li><strong>Personal expenses</strong> &mdash; non-shared expenses you log: amount, category, merchant, notes, and date</li>
+        <li><strong>Receipts</strong> &mdash; optional receipt photos you choose to upload, stored in Firebase Cloud Storage</li>
+        <li><strong>Settlements</strong> &mdash; records of UPI Intent dispatches between members: payer, recipient, amount, timestamp, and recipient confirmation status</li>
+        <li><strong>Friendships</strong> &mdash; the list of users you have added as friends</li>
+      </ul>
+
+      <h3>Device &amp; Technical Data</h3>
+      <ul>
+        <li><strong>FCM push notification token</strong> &mdash; an opaque token from Firebase Cloud Messaging used to deliver push notifications to your device</li>
+        <li><strong>Firebase Analytics events</strong> &mdash; anonymous app usage events (screen views, feature usage) collected by the Firebase Analytics SDK. No personal content (no expense amounts, no chat-like data) is sent to Analytics.</li>
+        <li><strong>Crashlytics reports</strong> &mdash; automatic crash reports including device model, OS version, app version, and stack traces when the app crashes. These help us fix bugs.</li>
+        <li><strong>App preferences</strong> &mdash; theme choice, onboarding completion status, and similar settings (stored locally on your device using <code>shared_preferences</code> and <code>flutter_secure_storage</code>)</li>
+      </ul>
+
+      <div class="highlight highlight-amber">
+        <strong>What we deliberately don't store</strong>
+        We do not store your UPI PIN, OTPs, bank account numbers, card details, or payment credentials of any kind. Avixo never sees this information &mdash; it stays inside your UPI app.
+      </div>
+    </div>
+
+    <!-- 3. Information We Do NOT Collect -->
+    <div class="section" id="info-not-collected">
+      <h2><span class="section-number">3</span> What We Do NOT Collect</h2>
+      <p>Avixo does <strong>not</strong> collect or have access to:</p>
+      <ul class="check-list">
+        <li class="no">UPI PINs, OTPs, or any payment authentication credentials</li>
+        <li class="no">Bank account numbers, card numbers, CVVs, or expiry dates</li>
+        <li class="no">SMS messages, call logs, or your contacts list</li>
+        <li class="no">Your precise location or GPS coordinates</li>
+        <li class="no">Calendar, microphone, or biometric data</li>
+        <li class="no">Browsing history outside the app</li>
+        <li class="no">Bank statements or transactions from any source other than what you manually enter</li>
+        <li class="no">Data from third-party ad networks (we don't use any)</li>
+        <li class="no">Behavioural advertising profiles or cross-app tracking identifiers</li>
+        <li class="no">Health, biometric, or any other sensitive personal data category</li>
+      </ul>
+    </div>
+
+    <!-- 4. How Your Information Is Used -->
+    <div class="section" id="how-used">
+      <h2><span class="section-number">4</span> How Your Information Is Used</h2>
+      <p>We use the information we collect strictly to:</p>
+      <ul>
+        <li><strong>Authenticate you</strong> &mdash; verify your identity via Google Sign-In</li>
+        <li><strong>Enable core features</strong> &mdash; let you create groups, log expenses, see balances, and settle up</li>
+        <li><strong>Help friends find you</strong> &mdash; let other Avixo users search by phone number to add you as a friend</li>
+        <li><strong>Dispatch UPI Intents</strong> &mdash; build <code>upi://pay?...</code> links using a recipient's stored VPA so you can settle up through your UPI app</li>
+        <li><strong>Notify you</strong> &mdash; send push notifications when a friend adds an expense involving you, requests settlement, or confirms receiving a payment</li>
+        <li><strong>Improve the app</strong> &mdash; use anonymous analytics and crash reports to identify bugs and usage patterns</li>
+        <li><strong>Comply with law</strong> &mdash; respond to lawful requests where required (see Section 10)</li>
+      </ul>
+
+      <h3>We do NOT use your data to:</h3>
+      <ul class="check-list">
+        <li class="no">Sell, rent, or trade it to anyone</li>
+        <li class="no">Show you advertisements or build advertising profiles</li>
+        <li class="no">Train AI models on your expense data or receipt content</li>
+        <li class="no">Score your creditworthiness or share data with credit bureaus</li>
+        <li class="no">Profile you for any purpose other than running the features described above</li>
+      </ul>
+    </div>
+
+    <!-- 5. Data Flow -->
+    <div class="section" id="data-flow">
+      <h2><span class="section-number">5</span> Data Flow &amp; Architecture</h2>
+      <p>Avixo has two separate data flows: <strong>app data</strong> (groups, expenses) syncs through Firebase, and <strong>money</strong> moves through your UPI app independently.</p>
+
+      <div class="data-flow">
+        <p style="font-weight: 600; color: var(--text); margin-bottom: 14px;">App data sync (Firebase)</p>
+        <div class="flow-row">
+          <div class="flow-box flow-device">Your Device<br><small>(Avixo app)</small></div>
+          <div>
+            <div class="flow-arrow">&harr;</div>
+            <div class="flow-label">Encrypted HTTPS / Firestore SDK</div>
+          </div>
+          <div class="flow-box flow-firebase">Firebase<br><small>(Auth, Firestore, Storage, FCM)</small></div>
+        </div>
+
+        <p style="font-weight: 600; color: var(--text); margin: 24px 0 14px;">Settlement (UPI Intent &mdash; Avixo is not in this path)</p>
+        <div class="flow-row">
+          <div class="flow-box flow-device">Avixo<br><small>(builds upi:// link)</small></div>
+          <div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-label">Hands off to your UPI app</div>
+          </div>
+          <div class="flow-box flow-upi">UPI App<br><small>(GPay, PhonePe, Paytm)</small></div>
+          <div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-label">Money moves bank-to-bank</div>
+          </div>
+          <div class="flow-box flow-upi">Recipient's Bank</div>
+        </div>
+      </div>
+
+      <p><strong>What leaves your device through Avixo:</strong></p>
+      <ul>
+        <li>Your profile data (name, phone, VPA, photo URL) &rarr; Firebase</li>
+        <li>Expense, group, settlement, and friendship records &rarr; Firestore</li>
+        <li>Optional receipt photos &rarr; Firebase Cloud Storage</li>
+        <li>Anonymous analytics &amp; crash reports &rarr; Firebase Analytics / Crashlytics</li>
+        <li>Push notification token &rarr; Firebase Cloud Messaging</li>
+      </ul>
+
+      <p><strong>What never touches Avixo or our backend:</strong></p>
+      <ul>
+        <li>Your UPI PIN, OTP, or any payment authentication credential</li>
+        <li>The actual money transfer &mdash; that happens entirely inside your UPI app and the NPCI/banking network</li>
+        <li>App preferences kept in local storage on your device</li>
+      </ul>
+    </div>
+
+    <!-- 6. UPI Settlement -->
+    <div class="section" id="upi-settlement">
+      <h2><span class="section-number">6</span> UPI Settlement &amp; Money Custody</h2>
+
+      <div class="highlight highlight-mint">
+        <strong>We never hold or transfer your money.</strong>
+        Avixo is not a Payment Aggregator (PA), Payment Service Provider (PSP), Prepaid Payment Instrument (PPI) issuer, Third-Party Application Provider (TPAP), or any other regulated payment entity. We do not require &mdash; and do not hold &mdash; any RBI or NPCI licence because we never come into possession of customer funds.
+      </div>
+
+      <h3>How settlement actually works</h3>
+      <ol>
+        <li>You tap "Settle Up" on a debt you owe a friend.</li>
+        <li>Avixo constructs a standard UPI Intent URL of the form <code>upi://pay?pa=friend@bank&amp;pn=Friend%20Name&amp;am=123.45&amp;tn=Avixo%20settlement&amp;tr=&lt;settlementId&gt;</code> using your friend's stored VPA.</li>
+        <li>Android hands that URL off to whichever UPI app you choose &mdash; GPay, PhonePe, Paytm, BHIM, your bank's UPI app, etc.</li>
+        <li>You confirm and enter your UPI PIN <strong>inside that UPI app</strong>. Avixo never sees your PIN.</li>
+        <li>Funds move bank-to-bank through the NPCI UPI rails. Avixo is not in this path.</li>
+        <li>Your friend receives a notification in their UPI app and confirms receipt inside Avixo. We record this confirmation as a "settled" event on the original debt.</li>
+      </ol>
+
+      <h3>What this means for your privacy</h3>
+      <ul>
+        <li>We do not know whether a UPI transaction actually succeeded &mdash; we only know that your friend confirmed receipt inside Avixo.</li>
+        <li>We do not have access to your transaction history with your bank or UPI provider.</li>
+        <li>The amount we store is the amount you logged in the app &mdash; we do not verify it against any banking record.</li>
+        <li>If your friend never confirms receipt, the debt remains "outstanding" in Avixo. We have no way to resolve this on our own.</li>
+      </ul>
+    </div>
+
+    <!-- 7. Data Storage & Security -->
+    <div class="section" id="storage-security">
+      <h2><span class="section-number">7</span> Data Storage &amp; Security</h2>
+
+      <h3>Where your data lives</h3>
+      <ul>
+        <li><strong>Google Firebase</strong> (operated by Google LLC) &mdash; Firestore, Cloud Storage, Authentication, Cloud Functions, FCM, Analytics, and Crashlytics. Data is stored on Google's infrastructure under Google's security controls.</li>
+        <li><strong>Your device</strong> &mdash; app preferences (theme, onboarding state) stored locally via <code>shared_preferences</code>; sensitive items via <code>flutter_secure_storage</code> (which uses the platform Keystore on Android).</li>
+      </ul>
+
+      <h3>Security measures</h3>
+      <ul class="check-list">
+        <li class="lock"><strong>Encryption in transit:</strong> All communication between the app and Firebase uses TLS/HTTPS.</li>
+        <li class="lock"><strong>Encryption at rest:</strong> Firebase encrypts stored data at rest on Google's infrastructure.</li>
+        <li class="shield"><strong>Authentication:</strong> Firebase Authentication via Google Sign-In. Your password (if any) lives with Google, not us.</li>
+        <li class="shield"><strong>Firestore Security Rules:</strong> Server-side rules restrict every read and write so that you can only access your own data and groups you are a member of.</li>
+        <li class="shield"><strong>App Sandboxing:</strong> Android's security model isolates Avixo's local data from other apps on your device.</li>
+        <li class="lock"><strong>No raw payment credentials:</strong> We never receive, store, or transmit UPI PINs, OTPs, card numbers, or bank account numbers.</li>
+        <li class="shield"><strong>Minimal permissions:</strong> Avixo requests only the Android permissions it actually needs (see Section 9).</li>
+      </ul>
+
+      <h3>Limitations of security</h3>
+      <p>
+        No system is 100% secure. While we follow industry best practices and rely on Google's hardened infrastructure, we cannot guarantee absolute security against all threats. If we become aware of a data breach affecting your personal information, we will notify you and the appropriate authorities as required by applicable law.
+      </p>
+    </div>
+
+    <!-- 8. Third-Party Services -->
+    <div class="section" id="third-party">
+      <h2><span class="section-number">8</span> Third-Party Services</h2>
+      <p>Avixo uses the following third-party services, each governed by its own privacy policy:</p>
+
+      <div class="third-party-card">
+        <h4>Google Firebase &amp; Google Sign-In (Google LLC / Google Cloud)</h4>
+        <p>Firebase is our backend platform. We use Firebase Auth (sign-in), Firestore (database), Cloud Storage (receipt photos), Cloud Functions (server-side logic), FCM (push notifications), Analytics (anonymous usage), and Crashlytics (crash reports). Google Sign-In handles authentication.</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>What we share</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Your Google account email, display name, profile photo</td>
+              <td>Authenticate you and pre-fill your profile</td>
+            </tr>
+            <tr>
+              <td>Your profile fields, groups, expenses, settlements, receipts</td>
+              <td>Sync and persist your app data across devices</td>
+            </tr>
+            <tr>
+              <td>FCM device token</td>
+              <td>Deliver push notifications</td>
+            </tr>
+            <tr>
+              <td>Anonymous app usage events &amp; crash reports</td>
+              <td>Diagnose bugs and understand which features are used</td>
+            </tr>
+            <tr>
+              <td>Google's privacy policy</td>
+              <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></td>
+            </tr>
+            <tr>
+              <td>Firebase data handling</td>
+              <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">firebase.google.com/support/privacy</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="third-party-card">
+        <h4>UPI Apps &amp; the NPCI UPI Network</h4>
+        <p>When you settle up, Avixo hands a UPI Intent URL to your chosen UPI app (Google Pay, PhonePe, Paytm, BHIM, your bank's UPI app, etc.). From that point forward, the transaction is governed by that UPI app's privacy policy, your bank's terms, and the rules of the National Payments Corporation of India (NPCI). Avixo is not a party to that transaction.</p>
+        <p>We do not have access to anything that happens inside your UPI app, and your UPI app does not share transaction confirmations with us.</p>
+      </div>
+
+      <h3>Services we do NOT use</h3>
+      <ul class="check-list">
+        <li class="no">No advertising SDKs or ad networks (AdMob, Meta Ads, etc.)</li>
+        <li class="no">No social-media tracking pixels or login SDKs other than Google Sign-In</li>
+        <li class="no">No third-party analytics beyond Firebase Analytics</li>
+        <li class="no">No payment gateways or wallet providers (Razorpay, Stripe, etc.)</li>
+        <li class="no">No data brokers, scoring services, or marketing automation tools</li>
+      </ul>
+    </div>
+
+    <!-- 9. Permissions -->
+    <div class="section" id="permissions">
+      <h2><span class="section-number">9</span> App Permissions</h2>
+      <p>Avixo requests only the permissions strictly needed for its features:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Purpose</th>
+            <th>When used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Internet</strong></td>
+            <td>Sync data with Firebase and dispatch UPI Intents</td>
+            <td>Whenever the app is online</td>
+          </tr>
+          <tr>
+            <td><strong>Camera</strong></td>
+            <td>Capture receipt photos to attach to expenses</td>
+            <td>Only when you tap "Add receipt" and choose Camera</td>
+          </tr>
+          <tr>
+            <td><strong>Photos / Media</strong></td>
+            <td>Pick existing receipt or profile photos from your gallery</td>
+            <td>Only when you tap "Choose from gallery"</td>
+          </tr>
+          <tr>
+            <td><strong>Post Notifications</strong></td>
+            <td>Show push notifications for expense activity and settlement requests (Android 13+)</td>
+            <td>Asked once at app launch; you can decline or revoke any time</td>
+          </tr>
+          <tr>
+            <td><strong>Vibrate</strong></td>
+            <td>Vibrate the device when a notification arrives</td>
+            <td>When a notification is delivered</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="highlight highlight-purple">
+        <strong>What we do NOT ask for</strong>
+        Avixo never asks for SMS, contacts, call log, microphone, precise location, calendar, or background-location permissions.
+      </div>
+    </div>
+
+    <!-- 10. Data Sharing -->
+    <div class="section" id="data-sharing">
+      <h2><span class="section-number">10</span> Data Sharing &amp; Disclosure</h2>
+      <p>We share information only in these limited circumstances:</p>
+
+      <ol>
+        <li><strong>With other Avixo users you choose to interact with.</strong> When you add a friend, create a group, or log a shared expense, the members of that group see the relevant data: your name, profile photo, the expense amount, who paid, the split, your notes, and any receipt you attached. Your phone number is visible to friends who lookup-by-phone added you. Your UPI VPA is visible to anyone you owe money to (since they need it to receive a UPI payment from you, or vice versa).</li>
+        <li><strong>With our service providers (Firebase / Google).</strong> Firebase processes and stores data on our behalf as a processor, under contractual data-protection terms.</li>
+        <li><strong>With UPI apps you choose to use.</strong> When you tap "Settle Up", recipient name, VPA, amount, and a settlement reference are passed to the UPI app you launch.</li>
+        <li><strong>Where required by law.</strong> We may disclose information if compelled by a valid legal process (court order, summons, government request) under applicable Indian or other law. We will challenge overbroad requests where lawful to do so.</li>
+        <li><strong>To protect rights and safety.</strong> If we reasonably believe disclosure is necessary to prevent fraud, security incidents, or harm to users.</li>
+        <li><strong>In a business transfer.</strong> If Nebulixlabz is acquired, merged, or sells assets that include Avixo, your data may be transferred &mdash; subject to the same protections as this policy.</li>
+      </ol>
+
+      <h3>We categorically do not:</h3>
+      <ul class="check-list">
+        <li class="no">Sell your personal data to anyone, for any reason</li>
+        <li class="no">Share data with advertisers or marketing companies</li>
+        <li class="no">Provide data to data brokers, credit bureaus, or scoring services</li>
+        <li class="no">Use your data for automated decision-making that affects your legal rights</li>
+      </ul>
+    </div>
+
+    <!-- 11. Your Privacy Rights -->
+    <div class="section" id="your-rights">
+      <h2><span class="section-number">11</span> Your Privacy Rights</h2>
+      <p>You have meaningful control over your data:</p>
+
+      <h3>Access</h3>
+      <ul>
+        <li>View your profile, groups, expenses, settlements, and receipts directly inside the app at any time.</li>
+        <li>Request a copy of all data we hold about you by emailing <a href="mailto:nebulix.labz@gmail.com">nebulix.labz@gmail.com</a>.</li>
+      </ul>
+
+      <h3>Correction</h3>
+      <ul>
+        <li>Edit your display name, phone number, and UPI VPA in your profile settings.</li>
+        <li>Edit or delete individual expenses, groups, and settlements from inside the app.</li>
+      </ul>
+
+      <h3>Deletion</h3>
+      <ul>
+        <li>Delete individual expenses, receipts, groups, or friendships from inside the app.</li>
+        <li>Delete your entire Avixo account from the in-app Settings &rarr; Account &rarr; Delete Account flow. This removes your profile, friendships, personal expenses, and the data you contributed.</li>
+        <li>You can also email <a href="mailto:nebulix.labz@gmail.com">nebulix.labz@gmail.com</a> to request deletion.</li>
+      </ul>
+
+      <div class="highlight highlight-amber">
+        <strong>Shared-ledger note</strong>
+        Because shared expenses involve multiple people, we cannot fully erase expenses that other group members still rely on for their own balances. When you delete your account, your name is anonymised on records that other members need to keep their ledger consistent. Your phone, VPA, profile photo, and personal expenses are deleted entirely.
+      </div>
+
+      <h3>Portability</h3>
+      <p>You can request an export of your data in a structured, machine-readable format by emailing us.</p>
+
+      <h3>Withdraw consent / opt-out</h3>
+      <ul>
+        <li>Revoke notification permission any time from Android Settings.</li>
+        <li>Sign out at any time from in-app Settings.</li>
+        <li>Disable Firebase Analytics collection from in-app Settings &rarr; Privacy (where available).</li>
+        <li>Uninstall the app to stop further data collection from your device.</li>
+      </ul>
+
+      <h3>Complaints</h3>
+      <p>If you believe we have mishandled your data, please contact us first &mdash; we will work to resolve it. You also have the right to lodge a complaint with the relevant data protection authority in your jurisdiction.</p>
+    </div>
+
+    <!-- 12. Retention & Deletion -->
+    <div class="section" id="retention-deletion">
+      <h2><span class="section-number">12</span> Retention &amp; Account Deletion</h2>
+
+      <h3>How long we keep data</h3>
+      <ul>
+        <li><strong>Active accounts:</strong> we retain your data as long as your account is active.</li>
+        <li><strong>Deleted accounts:</strong> profile data, personal expenses, receipt photos, and friendships are removed within 30 days of your deletion request. Backup copies are purged within 90 days.</li>
+        <li><strong>Shared expense records:</strong> as described above, expenses you logged in a group remain in the ledger of that group (with your identifier anonymised) for as long as other members keep the group, so their balances remain consistent.</li>
+        <li><strong>Crash logs and anonymous analytics:</strong> retained for up to 14 months in line with Firebase defaults.</li>
+        <li><strong>Legal obligations:</strong> we may retain certain records longer where required by law.</li>
+      </ul>
+    </div>
+
+    <!-- 13. Children's Privacy -->
+    <div class="section" id="children">
+      <h2><span class="section-number">13</span> Children's Privacy</h2>
+      <div class="highlight highlight-red">
+        <strong>Age Restriction: 18+</strong>
+        Avixo is intended for users aged 18 years and older. The app involves real financial coordination via UPI, and Indian banking norms require account holders to be 18 or older.
+      </div>
+      <p>
+        We do not knowingly collect data from children under 18. If you are a parent or guardian and believe your child has used Avixo, please <a href="#contact">contact us</a> and we will delete the account and associated data promptly.
+      </p>
+    </div>
+
+    <!-- 14. International Users -->
+    <div class="section" id="international">
+      <h2><span class="section-number">14</span> International Users</h2>
+      <p>Avixo is primarily designed for users in India. UPI settlement is currently only available between Indian bank accounts.</p>
+      <ul>
+        <li><strong>Data location:</strong> Your data is stored on Google Firebase infrastructure. Google operates data centres globally and may process and store data in regions outside India. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase's privacy documentation</a> for region details.</li>
+        <li><strong>DPDPA (India):</strong> We aim to comply with India's Digital Personal Data Protection Act, 2023 obligations applicable to us as a data fiduciary.</li>
+        <li><strong>GDPR (EU/EEA):</strong> If you are in the EU/EEA, you have the rights described in Section 11 and can contact us to exercise them. Our lawful bases for processing are <em>contract performance</em> (running the app you signed up for), <em>legitimate interests</em> (security, anti-fraud, improving the product), and <em>consent</em> (where required, e.g. analytics).</li>
+        <li><strong>CCPA / CPRA (California):</strong> We do not sell personal information and do not share personal information for cross-context behavioural advertising.</li>
+      </ul>
+    </div>
+
+    <!-- 15. Your Responsibilities -->
+    <div class="section" id="your-responsibilities">
+      <h2><span class="section-number">15</span> Your Responsibilities</h2>
+      <p>To keep your account and data safe:</p>
+      <ul>
+        <li><strong>Secure your device.</strong> Use a strong screen lock and keep Android updated.</li>
+        <li><strong>Secure your Google account.</strong> Turn on 2-Step Verification &mdash; your Avixo login depends on it.</li>
+        <li><strong>Verify recipients before paying.</strong> Avixo passes the VPA you tap to your UPI app, but final authorisation happens in the UPI app. Always double-check the recipient name shown in your UPI app before entering your PIN.</li>
+        <li><strong>Be honest in shared expenses.</strong> Other users rely on what you log.</li>
+        <li><strong>Avoid uploading sensitive content.</strong> Don't upload receipts that contain card numbers, government IDs, or other sensitive personal data.</li>
+        <li><strong>Report concerns promptly.</strong> If you discover a privacy or security issue, contact us immediately.</li>
+      </ul>
+    </div>
+
+    <!-- 16. Changes -->
+    <div class="section" id="changes">
+      <h2><span class="section-number">16</span> Changes to This Policy</h2>
+      <p>We may update this Privacy Policy to reflect changes in app features, third-party services, or legal requirements. When we make changes:</p>
+      <ul>
+        <li>The "Last Updated" date at the top of this page is revised.</li>
+        <li>For material changes, we will notify you in-app or via push notification at least 14 days before they take effect (where feasible).</li>
+        <li>Continued use of Avixo after the effective date constitutes acceptance of the updated policy.</li>
+      </ul>
+    </div>
+
+    <!-- 17. Contact -->
+    <div class="section" id="contact">
+      <h2><span class="section-number">17</span> Contact Us</h2>
+      <p>Questions, concerns, or privacy requests:</p>
+      <ul>
+        <li><strong>Developer:</strong> Nebulixlabz</li>
+        <li><strong>Email:</strong> <a href="mailto:nebulix.labz@gmail.com">nebulix.labz@gmail.com</a></li>
+        <li><strong>App:</strong> Avixo v1.0</li>
+        <li><strong>Platform:</strong> Google Play Store</li>
+      </ul>
+      <p>We aim to respond to privacy enquiries within <strong>7 business days</strong>. For deletion requests, we will confirm completion within 30 days.</p>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="section">
+      <h2>Disclaimer</h2>
+      <p>
+        Avixo is provided "as is" without warranties of any kind, express or implied. We are not a bank, payment service, wallet provider, or financial institution. We do not give financial, tax, or legal advice. While we implement reasonable security measures and rely on Google's hardened infrastructure, no system is 100% secure. You use Avixo at your own discretion and are responsible for the accuracy of the data you enter and for the UPI transactions you authorise.
+      </p>
+    </div>
+
+    <!-- Consent -->
+    <div class="section">
+      <h2>Consent</h2>
+      <p>
+        By downloading, installing, and using Avixo, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with any part of it, please do not use the app and uninstall it from your device.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="developer">
+      <strong>Avixo</strong> &mdash; Developed by <strong>Nebulixlabz</strong>
+    </div>
+    <p>
+      For privacy questions, contact us at
+      <a href="mailto:nebulix.labz@gmail.com">nebulix.labz@gmail.com</a>
+    </p>
+    <div class="links">
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+      &nbsp;&bull;&nbsp;
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy</a>
+      &nbsp;&bull;&nbsp;
+      <a href="https://www.npci.org.in/what-we-do/upi/product-overview" target="_blank" rel="noopener noreferrer">About UPI (NPCI)</a>
+    </div>
+    <div class="legal">
+      &copy; 2026 Nebulixlabz. All rights reserved.
+      <br>
+      This privacy policy was last updated on May 15, 2026.
+    </div>
+  </div>
+
+</body>
+</html>
